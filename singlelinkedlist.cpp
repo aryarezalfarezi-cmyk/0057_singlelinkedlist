@@ -11,6 +11,7 @@ public:
 
 class LinkedList
 {
+
     Node *START;
 
 public:
@@ -18,6 +19,7 @@ public:
     {
         START = NULL;
     }
+
     void addNode()
     {
         int nim;
@@ -33,5 +35,14 @@ public:
             return;
         }
 
-        nodebaru->next = START;
-        START = nodeBaru:
+        nodeBaru->next = START;
+        START = nodeBaru;
+        return;
+    }
+
+    Node *previous = START;
+    Node *current = START;
+
+    while (current != NULL && nim > current->nomhs)
+    {
+    }
