@@ -43,13 +43,17 @@ public:
     Node *previous = START;
     Node *current = START;
 
-    while (current != NULL && nim > current->noMHS)
+    while (current != NULL && nim > current->noMhs)
     {
-        if (nim == current->noMHS)
+        if (nim == current->noMhs)
         {
-            cout << "\nDuplikasi noMHS tidak diijinkan\n";
+            cout << "\nDuplikasi noMhs tidak dijinkan\n";
             return;
         }
         previous = current;
         current = current->next;
     }
+    nodeBaru->next = current;
+    previous->next = nodeBaru;
+
+    bool listEmpty();
